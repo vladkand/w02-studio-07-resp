@@ -1,0 +1,62 @@
+//
+
+.textStyle {
+   font-family: var(--secondary-font);
+   font-weight: 500;
+   font-size: 42px;
+   line-height: 1.2;
+   letter-spacing: 0.05em;
+
+   text-transform: capitalize;
+   color: var(--text-primary);
+}
+
+//
+$color-accent: #2196f3;
+$color-txt-main: #757575;
+$color-txt-second: #212121;
+$color-txt-white: #ffffff;
+$color-title: #212121;
+
+// LOGO-COLOR
+$color-logo-dark: #000000;
+$color-logo-white: #ffffff;
+
+// HEADER-COLOR
+$color-link-header: #757575;
+
+// SOCIAL-COLOR
+$social-color: #afb1b8;
+$social-color-dark: rgba(255, 255, 255, 0.1);
+
+// CLIENT-COLOR
+$client-color: #afb1b8;
+
+// FOOTER-COLOR
+$color-txt-addres: rgba(255, 255, 255, 0.6);
+
+// BG-COLOR
+$bg-main-color: #ffffff;
+$bg-second-color: #f5f4fa;
+$bg-hero-color: #c4c4c4;
+$bg-footer-color: #2f303a;
+$bg-modal: #ffffff;
+$bg-backdrop: rgba(0, 0, 0, 0.2);
+
+// suscribe-COLOR
+$placeholder-color: rgba(117, 117, 117, 0.5);
+
+// FORM-MODAL
+$border-input: rgba(33, 33, 33, 0.2);
+
+// BTN-COLOR
+$btn-active-color: #188ce8;
+$btn-overlay-color: rgba(33, 150, 243, 0.9);
+$btn-close-border-color: rgba(0, 0, 0, 0.1);
+$btn-close-ico-color: #000000;
+$btn-filter-bg: #f5f4fa;
+
+//
+$cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$transTemp: 350ms $cubic-function;

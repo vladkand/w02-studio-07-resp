@@ -1,0 +1,118 @@
+.hero {
+   // ==== mobile ==>
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 118px;
+   padding-bottom: 118px;
+   text-align: center;
+
+   background-color: var(--bg-hero-color);
+
+   background-image: linear-gradient(
+         to right,
+         rgba(255, 0, 0, 0.2),
+         rgba(0, 0, 255, 0.1)
+      ),
+      url(../images/hero/hero-bg-mob.jpg);
+
+   // ==  2x for mobile ==>
+   @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.2),
+            rgba(0, 0, 255, 0.1)
+         ),
+         url(../images/hero/hero-bg-mob@2x.jpg);
+   }
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   // ===== tablet =====
+   @media screen and (min-width: 768px) {
+      padding-top: 118px;
+      padding-bottom: 118px;
+
+      background-image: linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.2),
+            rgba(0, 0, 255, 0.1)
+         ),
+         url(../images/hero/hero-bg-tabl.jpg);
+
+      // ==  2x for tablet ==>
+      @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+         background-image: linear-gradient(
+               to right,
+               rgba(255, 0, 0, 0.2),
+               rgba(0, 0, 255, 0.1)
+            ),
+            url(../images/hero/hero-bg-tabl@2x.jpg);
+      }
+   }
+
+   // ==== desctop ==>
+   @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+
+      max-width: 1600px;
+      max-height: 600px;
+
+      background-image: linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.2),
+            rgba(0, 0, 255, 0.1)
+         ),
+         url(../images/hero/hero-bg-pc.jpg);
+
+      // ==  2x for pc ==>
+      @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+         background-image: linear-gradient(
+               to right,
+               rgba(255, 0, 0, 0.2),
+               rgba(0, 0, 255, 0.1)
+            ),
+            url(../images/hero/hero-bg-pc@2mx.jpg);
+      }
+   }
+}
+
+.hero-title {
+   // mobile ==>
+   font-size: 26px;
+   font-weight: 900;
+   line-height: 1.61; /* 161.538% */
+   letter-spacing: 1.56px;
+   text-transform: uppercase;
+   color: var(--color-txt-white);
+   // ====================
+
+   // pc ==>
+   @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36; /* 136.364% */
+      letter-spacing: 2.64px;
+   }
+}
+
+.hero__btn {
+   margin-top: 30px;
+   padding: 10px 24px;
+
+   color: #fff;
+
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+   // pc ==>
+   @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+   }
+}

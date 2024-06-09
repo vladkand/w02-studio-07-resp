@@ -1,0 +1,23 @@
+.btn {
+   display: inline-block;
+
+   font-size: 16px;
+   font-weight: 700;
+   letter-spacing: 0.96px;
+   line-height: 1.88; /* 187.5% */
+
+   color: var(--color-txt-white);
+   background-color: var(--color-accent);
+   border-radius: 4px;
+
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+   transition: background-color var(--transTemp);
+
+   cursor: pointer;
+
+   &:focus,
+   &:hover {
+      background-color: var(--btn-active-color);
+   }
+}

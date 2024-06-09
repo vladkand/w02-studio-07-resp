@@ -1,0 +1,29 @@
+//
+.title {
+   font-weight: 700;
+   // color: var(--color-txt-second);
+   color: var(--color-txt-second);
+}
+
+.section-title {
+   // ==> mobile
+   margin-bottom: 30px;
+
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+   }
+
+   text-align: center;
+
+   font-size: 28px;
+
+   line-height: normal;
+   letter-spacing: 0.84px;
+
+   // =============
+   // tablet ==>
+
+   // ==> desc
+   // font-size: 36px;
+   // line-height: 1.17;
+}

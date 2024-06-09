@@ -1,0 +1,96 @@
+//container
+
+/* ----- FEATURE ----- */
+
+.feature__list {
+   // ===> mobile
+   perspective: 1000px;
+
+   // tablet ==>
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: -30px;
+      margin-left: -30px;
+   }
+}
+
+.feature__item {
+   position: relative;
+
+   @media screen and (max-width: 767px) {
+      & + & {
+         margin-top: 30px;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+
+      margin-top: 30px;
+      margin-left: 30px;
+   }
+
+   // pc ==>
+   @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+   }
+
+   animation-name: rotator;
+   animation-duration: 3250ms;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+   &::before {
+      content: '';
+
+      display: block;
+      // width: 270px;
+
+      height: 120px;
+
+      border-radius: 4px;
+      background-color: #f5f4fa;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: contain; */
+      outline: 1px solid green;
+   }
+
+   &:nth-child(1)::before {
+      background-image: url(../images/icons/feature01.svg);
+   }
+
+   &:nth-child(2)::before {
+      background-image: url(../images/icons/feature02.svg);
+   }
+
+   &:nth-child(3)::before {
+      background-image: url(../images/icons/feature03.svg);
+   }
+
+   &:nth-child(4)::before {
+      background-image: url(../images/icons/feature04.svg);
+   }
+}
+
+.feature__descr {
+   padding-top: 30px;
+}
+
+.feature__subtitle {
+   text-align: center;
+   font-size: 14px;
+   line-height: normal;
+   text-transform: uppercase;
+
+   @media screen and (min-width: 768px) {
+      text-align: left;
+   }
+}
+
+.feature__text {
+   margin-top: 10px;
+}

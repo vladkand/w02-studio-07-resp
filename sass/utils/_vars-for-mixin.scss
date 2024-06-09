@@ -1,0 +1,39 @@
+//
+
+$breakpoints: (
+   // @include respond-to(mobile-min)
+   'mobile-min':
+      (
+         min-width: 320px,
+      ),
+   // @include respond-to(mobile)
+   'mobile':
+      (
+         min-width: 480px,
+      ),
+   // @include respond-to(mobile-max)
+   'mobile-max':
+      (
+         max-width: 767px,
+      ),
+   // @include respond-to(tablet)
+   'tablet':
+      (
+         min-width: 768px,
+      ),
+   // @include respond-to(tablet-max)
+   'tablet-max':
+      (
+         max-width: 1199px,
+      ),
+
+   // @include respond-to(desktop)
+   'desktop':
+      (
+         min-width: 1200px,
+      ),
+   'desktop-fhd': (
+      min-width: 1919px,
+   ),
+   'retina-apple-pasibo-bolshoe': ()
+) !default;

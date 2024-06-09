@@ -1,0 +1,33 @@
+.header {
+   border-bottom: 2px solid #ececec;
+}
+
+.header__wrapper {
+   position: relative;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   // @media screen and (max-width: 319px) {
+   //    width: 280px;
+   // }
+
+   // @media screen and (max-width: 767px) {
+   //    padding-top: 16px;
+   //    padding-bottom: 16px;
+   // }
+
+   @include respond-to(mobile-max) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+   }
+
+   // @media screen and (min-width: 768px) {
+   //    @include flexFull();
+   // }
+
+   @include respond-to(desktop) {
+      @include flexFull();
+   }
+}
