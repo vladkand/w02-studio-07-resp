@@ -16,6 +16,7 @@ body.modal-open {
 }
 .section {
    // mobile ==>
+   margin: 0 auto;
    padding-top: 60px;
    padding-bottom: 60px;
 
@@ -36,8 +37,8 @@ body.modal-open {
 
    padding-left: 15px;
    padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
+   // margin-left: auto;
+   // margin-right: auto;
 
    // === From mixin
    @include respond-to(mobile) {
